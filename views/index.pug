@@ -1,5 +1,21 @@
-h1 HelloCoders.Tokyo
+extends ./layouts/common
 
-a(href="/users") User list
+block content
 
-img(src="/images/logo.png")
+	h1.text-center.text-white.bg-dark.font-weight-bold VANESSA HOA
+	br
+
+	.card-deck
+		.card
+			img.img-rounded.img-fluid.contrast.zoom(src="/images/hoa1.jpg")
+			br
+			a.btn.btn-dark(href='/products/') Product
+		.card
+			img.img-rounded.img-fluid.contrast.zoom(src="/images/hoa2.jpg")
+			br
+			a.btn.btn-dark(href='/users/') Users
+		.card
+			img.img-rounded.img-fluid.contrast.zoom(src="/images/hoa3.jpg")
+			br
+			a.btn.btn-dark(href='/auth/login') Login
+

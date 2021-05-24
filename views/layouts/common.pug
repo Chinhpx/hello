@@ -5,17 +5,21 @@ html
 		link(rel="stylesheet", href="/styles/custom.css")
 
 
-	body.bg-image(style="\
-		background-image: url('https://mdbcdn.b-cdn.net/img/Photos/Others/images/76.jpg');\
-		height: 20vh;\
-		")
-		nav.navbar.navbar-expand-lg.navbar-light.bg-light
-			a.navbar-brand(href='/users') Users List
+	body.bg-light.bg-gradient
+		nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+			a.navbar-brand(href='/') Home
 			#navbarSupportedContent.collapse.navbar-collapse
 				ul.navbar-nav.mr-auto
 					li.nav-item
 						a.nav-link(href='/auth/login') Login
 					li.nav-item
-						a.nav-link(href='/users/create') Create
+						a.nav-link(href='/users/create') Register
+					li.nav-item
+						a.nav-link(href='/users/') Users
+					li.nav-item
+						a.nav-link(href='/products/') Products
+			if user
+				p= user.name
+
 		.container.pt-5
 			block content
