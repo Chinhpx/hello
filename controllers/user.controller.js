@@ -25,6 +25,8 @@ module.exports.create = (req, res) => {
 module.exports.postCreate = (req, res) => {
 	req.body.id = shortid.generate()
 	
+	var path = req.file.path.split('\\').slice(1).join('/')
+	req.body.avatar = path
 
 	db.get('users').push(req.body).write()
 	res.redirect('/users')
