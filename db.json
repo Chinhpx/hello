@@ -701,5 +701,25 @@
       "image": "https://loremflickr.com/320/240",
       "description": "turpis sed ante vivamus tortor duis mattis egestas metus aenean fermentum donec ut mauris eget massa tempor convallis nulla neque"
     }
+  ],
+  "session": [
+    {
+      "id": "FZD0alyA5",
+      "cart": {
+        "423ab574-4fd7-41c4-b540-a73965e70b62": 2,
+        "20ea5ac9-b53e-44aa-b647-3d2d2f4ddfdf": 1,
+        "34fa64f6-c2eb-447d-9ee4-9be29d7b0e37": 1
+      },
+      "total": 4
+    },
+    {
+      "id": "iqvHvaj7L",
+      "cart": {
+        "34fa64f6-c2eb-447d-9ee4-9be29d7b0e37": 3,
+        "423ab574-4fd7-41c4-b540-a73965e70b62": 1,
+        "20ea5ac9-b53e-44aa-b647-3d2d2f4ddfdf": 1
+      },
+      "total": 5
+    }
   ]
 }
